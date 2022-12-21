@@ -59,3 +59,39 @@ window.onload = function() {
 };
 
   // End of TypeWritter section
+  
+  
+  
+  setTimeout(function() {
+    document.getElementById('splash-screen').style.display = 'none';
+  }, 4000); // 3000 milliseconds = 3 seconds
+  
+
+window.onload = function() {
+  // Get the buttons
+  var button1 = document.getElementById("target");
+
+  // Hide the buttons
+  button1.style.display = "none";
+
+  // Display the buttons after 4 seconds
+  setTimeout(function() {
+    button1.style.display = "block";
+  }, 4000);
+  
+  window.onload = function() {
+  // Select the loading animation element
+  const loadingAnimation = document.querySelector('.loading-animation');
+
+  // Set the duration of the animation
+  const animationDuration = 4000; // 4 seconds
+
+  // Display the loading animation
+  loadingAnimation.style.display = 'block';
+
+  // Hide the loading animation after the specified duration
+  setTimeout(function() {
+    loadingAnimation.style.display = 'none';
+  }, animationDuration);
+};
+}
