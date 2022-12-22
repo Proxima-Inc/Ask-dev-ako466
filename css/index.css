@@ -323,8 +323,9 @@ footer{
 .splash-text{
   color: #fff;
   font-weight: bold;
-  font-size: 50px;
-  font-family: roboto, "arial black", arial, impact, ;
+  text-align: center;
+  font-size: 35px;
+  font-family: "arial black", arial, impact, ;
   letter-spacing:25px;
 }
 .loading-animation{
@@ -334,13 +335,20 @@ footer{
   left: 50px;
   display: block;
 }
-.innet-splash{
+.inner-splash{
   display: block;
+  max-width: 200px;
+  margin: auto;
 }
 .loading{
   color: #989898;
   font-weight: bold;
   font-family: Arial, roboto, impact;
   text-align: center;
-  line-height: 30pz;
+  font-size: 14px;
+}
+
+.splash-image{
+  width: 50%;
+  height: 50%;
 }
