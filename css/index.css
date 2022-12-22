@@ -349,6 +349,8 @@ footer{
 }
 
 .splash-image{
-  width: 50%;
-  height: 50%;
+  width: 150px;
+  height: 100px;
+  position: relative;
+  left: 0px;
 }
