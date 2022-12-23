@@ -5,7 +5,7 @@
   user-select: none;
 }
 body{
-  background-color: #0b1120;
+  background:#172d57;
 }
 .cover-img{
   width: 100%;
@@ -315,7 +315,7 @@ footer{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0b1129;
+  background-color: #172d57;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -329,16 +329,18 @@ footer{
   letter-spacing:25px;
 }
 .loading-animation{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
-  left: 50px;
+  left: 40px;
   display: block;
 }
 .inner-splash{
   display: block;
-  max-width: 200px;
+  max-width: 300px;
   margin: auto;
+  position: absolute;
+  bottom: 40px;
 }
 .loading{
   color: #989898;
@@ -349,8 +351,7 @@ footer{
 }
 
 .splash-image{
-  width: 150px;
-  height: 100px;
+  width: 130px;
   position: relative;
   left: 0px;
 }
