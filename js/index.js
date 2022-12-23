@@ -64,7 +64,7 @@ window.onload = function() {
   
   setTimeout(function() {
     document.getElementById('splash-screen').style.display = 'none';
-  }, 4000); // 3000 milliseconds = 3 seconds
+  }, 7000); // 3000 milliseconds = 3 seconds
   
 
 window.onload = function() {
@@ -77,14 +77,14 @@ window.onload = function() {
   // Display the buttons after 4 seconds
   setTimeout(function() {
     button1.style.display = "block";
-  }, 4000);
+  }, 7000);
   
   window.onload = function() {
   // Select the loading animation element
   const loadingAnimation = document.querySelector('.loading-animation');
 
   // Set the duration of the animation
-  const animationDuration = 4000; // 4 seconds
+  const animationDuration = 7000; // 4 seconds
 
   // Display the loading animation
   loadingAnimation.style.display = 'block';
