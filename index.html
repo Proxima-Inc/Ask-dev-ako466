@@ -8,10 +8,12 @@
   <script src="js/side-nav.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/bottom-nav.css" />
 		<link rel="stylesheet" type="text/css" href="css/side-nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/modal.css" />
   <title>Web developers hub</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!--
   <div id="splash-screen">
     <div class="inner-splash">
       <img class="splash-image" src="img/icon.png" alt="" />
@@ -20,6 +22,7 @@
     <p class="loading">Loading, please wait....</p>
   </div>
     </div>
+    -->
   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="challenge.html">Challenge</a>
@@ -61,8 +64,93 @@
       </div>
   </div> <!-- end of website cover section-->
   <!-- bottom nav section-->
-  <!-- Container Sections-->
-<section class="container">
+  
+  
+  
+  
+  <main class="container">
+    <div class="post-card-section">
+        <div class="comments">
+          <div class="head">
+            <div><img class="profile-image" src="img/me.jpg" alt=""></div>
+            <div><p class="name">Akorede Kurline</p></div>
+            <div><p class="time">21 Dec, 2022</p></div>
+          </div>
+          <br />
+          <div class="body">
+            <div class="body-img">
+              When you copy a code from a tutorial and it's not working. OMG 😲 what will be your reaction.
+              <br />
+              <br />
+              <img  id="body-img" src="img/img1.jpg" alt="" />
+            </div>
+          </div>
+          </div>
+<!-- HTML for the modal box -->
+<div id="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div class="post-card-section">
+      <div class="modal-comment">
+        <div class="modal-head">
+          <div>
+            <img class="profile-image" src="img/me.jpg" alt="" />
+          </div>
+          <div>
+            <p class="name">Akorede Kurline</p>
+          </div>
+          <div>
+            <p class="time">21 Dec, 2022</p>
+            
+          </div>
+          </div>
+          <br />
+          <div class="body">
+            <div class="body-img">
+              When you copy a code from a tutorial and it's not working. OMG 😲 what will be your reaction.
+              <br />
+              <br />
+              <img id="body-img" src="img/img1.jpg" alt="" />
+              <a class="save-link" href="img/a1.png" download="img-w-d-h-1">
+              <div class="save-btn">Save as PNG</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="open-modal-button">Share</div>
+<div class="share">
+  <img class="share-gif" id="modal-button" src="img/sare.gif" alt="" />
+</div>
+  </main>
+  <script type="text/javascript" charset="utf-8">
+  const modal = document.getElementById('modal');
+const closeButton = document.querySelector('.close-button');
+const openModalButton = document.getElementById('open-modal-button');
+
+function openModal() {
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+openModalButton.addEventListener('click', openModal);
+closeButton.addEventListener('click', closeModal);
+
+window.addEventListener('click', event => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+</script>
+  
+  
+  <!-- footer Container Sections-->
+<section class="footer-container">
   <br />
   <div class="inner-container">
     <div class="image-container">
